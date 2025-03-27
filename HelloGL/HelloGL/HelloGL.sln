@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloGL", "HelloGL\HelloGL.vcxproj", "{56AED550-A4D1-4246-8D31-CB6A64C89786}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56AED550-A4D1-4246-8D31-CB6A64C89786}.Debug|x64.ActiveCfg = Debug|x64
+		{56AED550-A4D1-4246-8D31-CB6A64C89786}.Debug|x64.Build.0 = Debug|x64
+		{56AED550-A4D1-4246-8D31-CB6A64C89786}.Debug|x86.ActiveCfg = Debug|Win32
+		{56AED550-A4D1-4246-8D31-CB6A64C89786}.Debug|x86.Build.0 = Debug|Win32
+		{56AED550-A4D1-4246-8D31-CB6A64C89786}.Release|x64.ActiveCfg = Release|x64
+		{56AED550-A4D1-4246-8D31-CB6A64C89786}.Release|x64.Build.0 = Release|x64
+		{56AED550-A4D1-4246-8D31-CB6A64C89786}.Release|x86.ActiveCfg = Release|Win32
+		{56AED550-A4D1-4246-8D31-CB6A64C89786}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D515D0C-999B-4047-8E14-F367E9B9C1B6}
+	EndGlobalSection
+EndGlobal
