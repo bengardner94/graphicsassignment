@@ -1,2 +1,5 @@
-﻿  HelloGL.cpp
-  HelloGL.vcxproj -> C:\Users\g014150o\Documents\HelloGL\HelloGL\Debug\HelloGL.exe
+﻿  Cube.cpp
+C:\Users\g014150o\Documents\graphicsassignment-2\graphicsassignment-2\HelloGL\HelloGL\HelloGL\Cube.cpp(22,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\g014150o\Documents\graphicsassignment-2\graphicsassignment-2\HelloGL\HelloGL\HelloGL\Cube.cpp(23,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\g014150o\Documents\graphicsassignment-2\graphicsassignment-2\HelloGL\HelloGL\HelloGL\Cube.cpp(24,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  HelloGL.vcxproj -> C:\Users\g014150o\Documents\graphicsassignment-2\graphicsassignment-2\HelloGL\HelloGL\Debug\HelloGL.exe

@@ -1,4 +1,16 @@
 ﻿  HelloGL.cpp
-  main.cpp
-  Generating Code...
-  HelloGL.vcxproj -> C:\Users\g014150o\source\repos\HelloGL\x64\Debug\HelloGL.exe
+GLUTCallbacks.obj : error LNK2019: unresolved external symbol __imp_glutTimerFunc referenced in function "void __cdecl GLUTCallbacks::Timer(int)" (?Timer@GLUTCallbacks@@YAXH@Z)
+HelloGL.obj : error LNK2001: unresolved external symbol __imp_glutTimerFunc
+GLUTCallbacks.obj : error LNK2019: unresolved external symbol __imp_glutGet referenced in function "void __cdecl GLUTCallbacks::Timer(int)" (?Timer@GLUTCallbacks@@YAXH@Z)
+HelloGL.obj : error LNK2019: unresolved external symbol __imp_glutInitDisplayMode referenced in function "public: __cdecl HelloGL::HelloGL(int,char * * const)" (??0HelloGL@@QEAA@HQEAPEAD@Z)
+HelloGL.obj : error LNK2019: unresolved external symbol __imp_glutMainLoop referenced in function "public: __cdecl HelloGL::HelloGL(int,char * * const)" (??0HelloGL@@QEAA@HQEAPEAD@Z)
+HelloGL.obj : error LNK2019: unresolved external symbol __imp_glutPostRedisplay referenced in function "public: void __cdecl HelloGL::Update(void)" (?Update@HelloGL@@QEAAXXZ)
+HelloGL.obj : error LNK2019: unresolved external symbol __imp_glutSwapBuffers referenced in function "public: void __cdecl HelloGL::Display(void)" (?Display@HelloGL@@QEAAXXZ)
+HelloGL.obj : error LNK2019: unresolved external symbol __imp_glutKeyboardFunc referenced in function "public: __cdecl HelloGL::HelloGL(int,char * * const)" (??0HelloGL@@QEAA@HQEAPEAD@Z)
+HelloGL.obj : error LNK2019: unresolved external symbol __imp_glutDisplayFunc referenced in function "public: __cdecl HelloGL::HelloGL(int,char * * const)" (??0HelloGL@@QEAA@HQEAPEAD@Z)
+HelloGL.obj : error LNK2019: unresolved external symbol __imp___glutInitWithExit referenced in function glutInit_ATEXIT_HACK
+HelloGL.obj : error LNK2019: unresolved external symbol __imp___glutCreateWindowWithExit referenced in function glutCreateWindow_ATEXIT_HACK
+HelloGL.obj : error LNK2019: unresolved external symbol "public: __cdecl Cube::Cube(void)" (??0Cube@@QEAA@XZ) referenced in function "public: __cdecl HelloGL::HelloGL(int,char * * const)" (??0HelloGL@@QEAA@HQEAPEAD@Z)
+HelloGL.obj : error LNK2019: unresolved external symbol "public: __cdecl Cube::~Cube(void)" (??1Cube@@QEAA@XZ) referenced in function "public: void * __cdecl Cube::`scalar deleting destructor'(unsigned int)" (??_GCube@@QEAAPEAXI@Z)
+freeglut.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\g014150o\Documents\graphicsassignment-2\graphicsassignment-2\HelloGL\HelloGL\x64\Debug\HelloGL.exe : fatal error LNK1120: 12 unresolved externals
