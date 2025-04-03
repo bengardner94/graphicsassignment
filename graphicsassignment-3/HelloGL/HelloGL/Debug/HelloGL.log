@@ -1,0 +1,7 @@
+﻿  HelloGL.cpp
+C:\Users\g014150o\Documents\graphicsassignment-3\HelloGL\HelloGL\HelloGL.cpp(16,2): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
+C:\Users\g014150o\Documents\graphicsassignment-3\HelloGL\HelloGL\HelloGL.cpp(16,2): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\g014150o\Documents\graphicsassignment-3\HelloGL\HelloGL\HelloGL.cpp(29,107): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\g014150o\Documents\graphicsassignment-3\HelloGL\HelloGL\HelloGL.cpp(29,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\g014150o\Documents\graphicsassignment-3\HelloGL\HelloGL\HelloGL.cpp(29,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  HelloGL.vcxproj -> C:\Users\g014150o\Documents\graphicsassignment-3\HelloGL\Debug\HelloGL.exe
