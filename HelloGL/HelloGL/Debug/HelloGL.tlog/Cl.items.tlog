@@ -1,3 +1,6 @@
-C:\Users\g014150o\Documents\HelloGL\HelloGL\HelloGL\GLUTCallbacks.cpp;C:\Users\g014150o\Documents\HelloGL\HelloGL\HelloGL\Debug\GLUTCallbacks.obj
-C:\Users\g014150o\Documents\HelloGL\HelloGL\HelloGL\HelloGL.cpp;C:\Users\g014150o\Documents\HelloGL\HelloGL\HelloGL\Debug\HelloGL.obj
-C:\Users\g014150o\Documents\HelloGL\HelloGL\HelloGL\main.cpp;C:\Users\g014150o\Documents\HelloGL\HelloGL\HelloGL\Debug\main.obj
+C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\Cube.cpp;C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\Debug\Cube.obj
+C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\GLUTCallbacks.cpp;C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\Debug\GLUTCallbacks.obj
+C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\HelloGL.cpp;C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\Debug\HelloGL.obj
+C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\main.cpp;C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\Debug\main.obj
+C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\MeshLoader.cpp;C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\Debug\MeshLoader.obj
+C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\SceneObject.cpp;C:\Users\g014150o\Documents\graphicsassignment-4\graphicsassignment-3\HelloGL\HelloGL\Debug\SceneObject.obj
