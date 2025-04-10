@@ -3,6 +3,7 @@
 #define REFRESHRATE 16
 #include "Structures.h"
 #include "Cube.h"
+#include "Pyramid.h"
 
 class HelloGL
 {

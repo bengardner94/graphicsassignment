@@ -5,9 +5,8 @@
 
 HelloGL::HelloGL(int argc, char* argv[])
 {
-	InitObjects();
 	InitGL(argc, argv);
-
+	InitObjects();
 	glutMainLoop();
 }
 
@@ -21,13 +20,20 @@ void HelloGL::InitObjects()
 {
 	rotation = 0.0f;
 	camera = new Camera();
-	Mesh* objectMesh = MeshLoader::Load((char*)"cube.txt");
+	Mesh* cubeMesh = MeshLoader::Load((char*)"cube.txt");
+	Mesh* pyramidMesh = MeshLoader::Load((char*)"pyramid.txt");
+	Texture2D* texture = new Texture2D();
+	texture->Load((char*)"penguins.raw", 512, 512);
 	camera->eye.x = 5.0f; camera->eye.y = 5.0f; camera->eye.z = -5.0f;
 	camera->center.x = 0.0f; camera->center.y = 0.0f; camera->center.z = 0.0f;
 	camera->up.x = 0.0f; camera->up.y = 1.0f; camera->up.z = 0.0f;
-	for (int i = 0; i < 1000; i++)
+	for (int i = 0; i < 500; i++)
 	{
-		objects[i] = new Cube(objectMesh, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
+		objects[i] = new Cube(cubeMesh, texture, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
+	}
+	for (int i = 500; i < 1000; i++)
+	{
+		objects[i] = new Pyramid(pyramidMesh, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
 	}
 }
 
@@ -59,8 +65,12 @@ void HelloGL::InitGL(int argc, char* argv[])
 	//switches back to the modelview matrix
 	glMatrixMode(GL_MODELVIEW);
 
+	glEnable(GL_TEXTURE_2D);
 	//enables back face culling
 	glEnable(GL_CULL_FACE);
+
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 	glCullFace(GL_BACK);
 }
@@ -68,7 +78,7 @@ void HelloGL::InitGL(int argc, char* argv[])
 void HelloGL::Display()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	for (int i = 0; i < 200; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		objects[i]->Draw();
 	}
