@@ -14,7 +14,7 @@ Pyramid::~Pyramid()
 
 void Pyramid::Draw()
 {
-	if ((_mesh->Vertices != nullptr) && (_mesh->Colors != nullptr) && (_mesh->Indices != nullptr))
+	/*if ((_mesh->Vertices != nullptr) && (_mesh->Colors != nullptr) && (_mesh->Indices != nullptr))
 	{
 		glEnableClientState(GL_VERTEX_ARRAY);
 		glEnableClientState(GL_COLOR_ARRAY);
@@ -27,7 +27,7 @@ void Pyramid::Draw()
 
 		glDisableClientState(GL_COLOR_ARRAY);
 		glDisableClientState(GL_VERTEX_ARRAY);
-	}
+	}*/
 }
 void Pyramid::Update()
 {

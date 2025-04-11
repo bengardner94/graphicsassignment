@@ -14,14 +14,19 @@ public:
 
 	void InitObjects();
 	void InitGL(int argc, char* argv[]);
+	void InitLighting();
 
 	void Display();
 	void Update();
 	void Keyboard(unsigned char key, int x, int y);
 
+	void DrawString(const char* text, Vector3* position, Color* color);
+
 private:
 	float rotation;
 	Camera* camera;
+	Vector4* _lightPosition;
+	Lighting* _lightData;
 
 	SceneObject* objects[1000];
 };

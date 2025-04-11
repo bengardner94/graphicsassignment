@@ -13,6 +13,8 @@ private:
 
 	Vector3 _position;
 
+	Material* _material;
+
 public:
 	Cube(Mesh* mesh, Texture2D* texture, float x, float y, float z);
 	~Cube();
