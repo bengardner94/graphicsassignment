@@ -1,19 +1,9 @@
 #pragma once
 #include <Windows.h>
-#include <gl/GL.h>
-#include <gl/GLU.h>
-#include "GL/freeglut.h"
 #define REFRESHRATE 16
-
-struct Vector3
-{
-	float x, y, z;
-};
-
-struct Camera
-{
-	Vector3 eye, center, up;
-};
+#include "Structures.h"
+#include "Cube.h"
+#include "Pyramid.h"
 
 class HelloGL
 {
@@ -22,13 +12,22 @@ public:
 	HelloGL(int argc, char* argv[]);
 	~HelloGL(void);
 
+	void InitObjects();
+	void InitGL(int argc, char* argv[]);
+	void InitLighting();
+
 	void Display();
-	void DrawPolygon();
 	void Update();
 	void Keyboard(unsigned char key, int x, int y);
+
+	void DrawString(const char* text, Vector3* position, Color* color);
 
 private:
 	float rotation;
 	Camera* camera;
+	Vector4* _lightPosition;
+	Lighting* _lightData;
+
+	SceneObject* objects[1000];
 };
 
