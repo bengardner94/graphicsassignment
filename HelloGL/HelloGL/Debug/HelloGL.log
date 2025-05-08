@@ -1,13 +1,13 @@
 ﻿  HelloGL.cpp
-C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\HelloGL\HelloGL.cpp(17,2): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
-C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\HelloGL\HelloGL.cpp(17,2): warning C4154: deletion of an array expression; conversion to pointer supplied
-C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\HelloGL\HelloGL.cpp(45,26): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\HelloGL\HelloGL.cpp(46,26): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\HelloGL\HelloGL.cpp(47,26): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\HelloGL\HelloGL.cpp(49,26): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\HelloGL\HelloGL.cpp(50,26): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\HelloGL\HelloGL.cpp(51,26): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\HelloGL\HelloGL.cpp(53,27): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\HelloGL\HelloGL.cpp(54,27): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\HelloGL\HelloGL.cpp(55,27): warning C4305: '=': truncation from 'double' to 'float'
-  HelloGL.vcxproj -> C:\Users\g014150o\Documents\graphicsassignment-6\graphicsassignment-6\HelloGL\Debug\HelloGL.exe
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\HelloGL\HelloGL.cpp(17,2): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\HelloGL\HelloGL.cpp(17,2): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\HelloGL\HelloGL.cpp(47,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\HelloGL\HelloGL.cpp(48,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\HelloGL\HelloGL.cpp(49,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\HelloGL\HelloGL.cpp(51,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\HelloGL\HelloGL.cpp(52,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\HelloGL\HelloGL.cpp(53,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\HelloGL\HelloGL.cpp(55,27): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\HelloGL\HelloGL.cpp(56,27): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\HelloGL\HelloGL.cpp(57,27): warning C4305: '=': truncation from 'double' to 'float'
+  HelloGL.vcxproj -> C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\Debug\HelloGL.exe

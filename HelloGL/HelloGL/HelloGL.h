@@ -24,7 +24,11 @@ public:
 
 private:
 	float rotation;
+	Texture2D* texture;
+	Mesh* cubeMesh;
+	Mesh* pyramidMesh;
 	Camera* camera;
+	Vector3* _position;
 	Vector4* _lightPosition;
 	Lighting* _lightData;
 

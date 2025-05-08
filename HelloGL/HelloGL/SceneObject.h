@@ -14,5 +14,7 @@ public:
 
 	virtual void Update();
 	virtual void Draw();
+	virtual void EditPosition(int newPosition);
+	virtual Vector3* GetPosition();
 };
 

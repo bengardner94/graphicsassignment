@@ -29,9 +29,9 @@ void Cube::Draw()
 		glTexCoordPointer(2, GL_FLOAT, 0, _mesh->TexCoords);
 	
 		_material = new Material();
-		_material->Ambient.x = 0.8; _material->Ambient.y = 0.05; _material->Ambient.z = 0.05; _material->Ambient.z = 1.0;
+		_material->Ambient.x = 1.0; _material->Ambient.y = 1.0; _material->Ambient.z = 1.0; _material->Ambient.z = 1.0;
 		_material->Diffuse.x = 0.8; _material->Diffuse.y = 0.05; _material->Diffuse.z = 0.05; _material->Diffuse.z = 1.0;
-		_material->Specular.x = 0.8; _material->Specular.y = 0.05; _material->Specular.z = 0.05; _material->Specular.z = 1.0;
+		_material->Specular.x = 1.0; _material->Specular.y = 1.0; _material->Specular.z = 1.0; _material->Specular.z = 1.0;
 		_material->Shininess = 100.0f;
 
 		glPushMatrix();
@@ -58,9 +58,57 @@ void Cube::Update()
 	if (_rotation >= 360.0f)
 		_rotation = 0.0f;
 
-	if (_position.z <= 100.0f)
-		_position.z += 0.2f;
-	else
-		_position.z = 0.0f;
+	if (position == 1)
+	{
+		if (_position.x >= -100.0f)
+			_position.x -= 0.2f;
+		else
+			_position.x = 0.0f;
+	}
+	else if (position == 2)
+	{
+		if (_position.x <= 100.0f)
+			_position.x += 0.2f;
+		else
+			_position.x = 0.0f;
+	}
+	else if (position == 3)
+	{
+		if (_position.y <= 100.0f)
+			_position.y += 0.2f;
+		else
+			_position.y = 0.0f;
+	}
+	else if (position == 4)
+	{
+		if (_position.y >= -100.0f)
+			_position.y -= 0.2f;
+		else
+			_position.y = 0.0f;
+	}
+	else if (position == 5)
+	{
+		if (_position.z <= 100.0f)
+			_position.z += 0.2f;
+		else
+			_position.z = 0.0f;
+	}
+	else if (position == 6)
+	{
+		if (_position.z >= -100.0f)
+			_position.z -= 0.2f;
+		else
+			_position.z = 0.0f;
+	}
 
+}
+
+void Cube::EditPosition(int newPosition)
+{
+	position = newPosition;
+}
+
+Vector3* Cube::GetPosition()
+{
+	return &_position;
 }

@@ -21,12 +21,14 @@ void HelloGL::InitObjects()
 {
 	rotation = 0.0f;
 	camera = new Camera();
-	Mesh* cubeMesh = MeshLoader::Load((char*)"cube.txt");
-	Texture2D* texture = new Texture2D();
+	_position = new Vector3();
+	cubeMesh = MeshLoader::Load((char*)"cube.txt");
+	texture = new Texture2D();
 	texture->Load((char*)"penguins.raw", 512, 512);
-	camera->eye.x = 1.0f; camera->eye.y = 1.0f; camera->eye.z = -1.0f;
+	camera->eye.x = 0.0f; camera->eye.y = 0.0f; camera->eye.z = 1.0f;
 	camera->center.x = 0.0f; camera->center.y = 0.0f; camera->center.z = 0.0f;
 	camera->up.x = 0.0f; camera->up.y = 1.0f; camera->up.z = 0.0f;
+	_position->x = camera->eye.x; _position->y = camera->eye.y; _position->z = camera->eye.z;
 	for (int i = 0; i < 500; i++)
 	{
 		objects[i] = new Cube(cubeMesh, texture, ((rand() % 400) / 10.0f) - 20.0f, ((rand() % 200) / 10.0f) - 10.0f, -(rand() % 1000) / 10.0f);
@@ -117,7 +119,7 @@ void HelloGL::Update()
 	//resets the modelview matrix every frame
 	glLoadIdentity();
 	//move the camera to the points specified by the camera variable
-	gluLookAt(camera->eye.x, camera->eye.y, camera->eye.z, camera->center.x, camera->center.y, camera->center.z, camera->up.x, camera->up.y, camera->up.z);
+	gluLookAt(_position->x, _position->y, _position->z, camera->center.x, camera->center.y, camera->center.z, camera->up.x, camera->up.y, camera->up.z);
 
 	//changes light values during execution
 	glLightfv(GL_LIGHT0, GL_AMBIENT, &(_lightData->Ambient.x));
@@ -136,11 +138,61 @@ void HelloGL::Update()
 void HelloGL::Keyboard(unsigned char key, int x, int y)
 {
 	if (key == 'a')
-	{
 		camera->eye.x += 0.0f; camera->eye.y += 1.0f; camera->eye.z += 0.0f;
-	}
+	if (key == 'c')
+		camera->eye.x += 0.0f; camera->eye.y -= 1.0f; camera->eye.z += 0.0f;
 	if (key == 'd')
 		rotation += 10.0f;
+	if (key == 'p')
+		texture->Load((char*)"penguins.raw", 512, 512);
+	if (key == 's')
+		texture->Load((char*)"stars.raw", 512, 512);
+	if (key == 'l')
+	{
+		for (int i = 0; i < 500; i++)
+		{
+			objects[i]->EditPosition(1);
+		}
+	}
+	if (key == 'r')
+	{
+		for (int i = 0; i < 500; i++)
+		{
+			objects[i]->EditPosition(2);
+		}
+	}
+	if (key == 'u')
+	{
+		for (int i = 0; i < 500; i++)
+		{
+			objects[i]->EditPosition(3);
+		}
+	}
+	if (key == 'd')
+	{
+		for (int i = 0; i < 500; i++)
+		{
+			objects[i]->EditPosition(4);
+		}
+	}
+	if (key == 'f')
+	{
+		for (int i = 0; i < 500; i++)
+		{
+			objects[i]->EditPosition(5);
+		}
+	}
+	if (key == 'b')
+	{
+		for (int i = 0; i < 500; i++)
+		{
+			objects[i]->EditPosition(6);
+		}
+	}
+	if (key == 'o')
+	{
+		_position = objects[rand() % 500]->GetPosition();
+	}
 }
 
 void HelloGL::DrawString(const char* text, Vector3* position, Color* color)

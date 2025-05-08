@@ -15,11 +15,14 @@ private:
 
 	Material* _material;
 
+	int position = 5;
 public:
 	Cube(Mesh* mesh, Texture2D* texture, float x, float y, float z);
 	~Cube();
 
 	void Draw();
 	void Update();
+	void EditPosition(int newPosition);
+	Vector3* GetPosition();
 };
 

@@ -1,14 +1,4 @@
-﻿  Cube.cpp
-  GLUTCallbacks.cpp
-  HelloGL.cpp
-C:\Users\g014150o\Documents\graphicsassignment-5\graphicsassignment-5\HelloGL\HelloGL\HelloGL.cpp(17,2): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
-C:\Users\g014150o\Documents\graphicsassignment-5\graphicsassignment-5\HelloGL\HelloGL\HelloGL.cpp(17,2): warning C4154: deletion of an array expression; conversion to pointer supplied
-  main.cpp
-  MeshLoader.cpp
-  SceneObject.cpp
-  Generating Code...
-  LINK : C:\Users\g014150o\Documents\graphicsassignment-5\graphicsassignment-5\HelloGL\x64\Debug\HelloGL.exe not found or not built by the last incremental link; performing full link
-GLUTCallbacks.obj : error LNK2019: unresolved external symbol __imp_glutTimerFunc referenced in function "void __cdecl GLUTCallbacks::Timer(int)" (?Timer@GLUTCallbacks@@YAXH@Z)
+﻿GLUTCallbacks.obj : error LNK2019: unresolved external symbol __imp_glutTimerFunc referenced in function "void __cdecl GLUTCallbacks::Timer(int)" (?Timer@GLUTCallbacks@@YAXH@Z)
 HelloGL.obj : error LNK2001: unresolved external symbol __imp_glutTimerFunc
 GLUTCallbacks.obj : error LNK2019: unresolved external symbol __imp_glutGet referenced in function "void __cdecl GLUTCallbacks::Timer(int)" (?Timer@GLUTCallbacks@@YAXH@Z)
 HelloGL.obj : error LNK2019: unresolved external symbol __imp_glutInitDisplayMode referenced in function "public: void __cdecl HelloGL::InitGL(int,char * * const)" (?InitGL@HelloGL@@QEAAXHQEAPEAD@Z)
@@ -19,5 +9,6 @@ HelloGL.obj : error LNK2019: unresolved external symbol __imp_glutKeyboardFunc r
 HelloGL.obj : error LNK2019: unresolved external symbol __imp_glutDisplayFunc referenced in function "public: void __cdecl HelloGL::InitGL(int,char * * const)" (?InitGL@HelloGL@@QEAAXHQEAPEAD@Z)
 HelloGL.obj : error LNK2019: unresolved external symbol __imp___glutInitWithExit referenced in function glutInit_ATEXIT_HACK
 HelloGL.obj : error LNK2019: unresolved external symbol __imp___glutCreateWindowWithExit referenced in function glutCreateWindow_ATEXIT_HACK
+HelloGL.obj : error LNK2019: unresolved external symbol __imp_glutBitmapString referenced in function "public: void __cdecl HelloGL::DrawString(char const *,struct Vector3 *,struct Color *)" (?DrawString@HelloGL@@QEAAXPEBDPEAUVector3@@PEAUColor@@@Z)
 freeglut.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
-C:\Users\g014150o\Documents\graphicsassignment-5\graphicsassignment-5\HelloGL\x64\Debug\HelloGL.exe : fatal error LNK1120: 10 unresolved externals
+C:\Users\g014150o\Documents\graphicsassignment-8\HelloGL\x64\Debug\HelloGL.exe : fatal error LNK1120: 11 unresolved externals
